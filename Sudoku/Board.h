@@ -9,6 +9,8 @@ public:
     void setValue(int row, int col, int value);
     [[nodiscard]] int getValue(int row, int col) const;
     void display();
+    [[nodiscard]] bool checkGrid() const;
+    static bool contains(std::vector<int> vec, int val);
 private:
     std::vector<std::vector<int>> tiles;
 };
