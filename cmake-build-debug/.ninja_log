@@ -1,5 +1,5 @@
 # ninja log v6
 45	1978	7445699433460288	CMakeFiles/CppProjects.dir/main.cpp.obj	891b938684f8c38
 21	329	7445725387024214	CMakeFiles/CppProjects.dir/calc.cpp.obj	2334b1a1aaf52a16
-18	533	7445729929051832	build.ninja	196eec06b25beb85
+18	533	7445798155051123	build.ninja	196eec06b25beb85
 11	250	7445726032407395	CMakeFiles/CppProjects.dir/test.cpp.obj	6068d5d6b90e5cef

@@ -40,6 +40,57 @@ include CMakeFiles/rules.ninja
 # Logical path to working directory; prefix for absolute paths.
 
 cmake_ninja_workdir = C$:/Users/paulc/CLionProjects/CppProjects/cmake-build-debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target CppProjects
+
+
+#############################################
+# Order-only phony target for CppProjects
+
+build cmake_object_order_depends_target_CppProjects: phony || CMakeFiles/CppProjects.dir
+
+build CMakeFiles/CppProjects.dir/test/calc.cpp.obj: CXX_COMPILER__CppProjects_unscanned_Debug C$:/Users/paulc/CLionProjects/CppProjects/test/calc.cpp || cmake_object_order_depends_target_CppProjects
+  DEP_FILE = CMakeFiles\CppProjects.dir\test\calc.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\CppProjects.dir
+  OBJECT_FILE_DIR = CMakeFiles\CppProjects.dir\test
+
+build CMakeFiles/CppProjects.dir/test/test.cpp.obj: CXX_COMPILER__CppProjects_unscanned_Debug C$:/Users/paulc/CLionProjects/CppProjects/test/test.cpp || cmake_object_order_depends_target_CppProjects
+  DEP_FILE = CMakeFiles\CppProjects.dir\test\test.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\CppProjects.dir
+  OBJECT_FILE_DIR = CMakeFiles\CppProjects.dir\test
+
+build CMakeFiles/CppProjects.dir/Sudoku/Sudoku.cpp.obj: CXX_COMPILER__CppProjects_unscanned_Debug C$:/Users/paulc/CLionProjects/CppProjects/Sudoku/Sudoku.cpp || cmake_object_order_depends_target_CppProjects
+  DEP_FILE = CMakeFiles\CppProjects.dir\Sudoku\Sudoku.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\CppProjects.dir
+  OBJECT_FILE_DIR = CMakeFiles\CppProjects.dir\Sudoku
+
+build CMakeFiles/CppProjects.dir/Sudoku/Board.cpp.obj: CXX_COMPILER__CppProjects_unscanned_Debug C$:/Users/paulc/CLionProjects/CppProjects/Sudoku/Board.cpp || cmake_object_order_depends_target_CppProjects
+  DEP_FILE = CMakeFiles\CppProjects.dir\Sudoku\Board.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\CppProjects.dir
+  OBJECT_FILE_DIR = CMakeFiles\CppProjects.dir\Sudoku
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target CppProjects
+
+
+#############################################
+# Link the executable CppProjects.exe
+
+build CppProjects.exe: CXX_EXECUTABLE_LINKER__CppProjects_Debug CMakeFiles/CppProjects.dir/test/calc.cpp.obj CMakeFiles/CppProjects.dir/test/test.cpp.obj CMakeFiles/CppProjects.dir/Sudoku/Sudoku.cpp.obj CMakeFiles/CppProjects.dir/Sudoku/Board.cpp.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = CMakeFiles\CppProjects.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = CppProjects.exe
+  TARGET_IMPLIB = libCppProjects.dll.a
+  TARGET_PDB = CppProjects.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -66,6 +117,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build CppProjects: phony CppProjects.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -74,7 +127,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: C:/Users/paulc/CLionProjects/CppProjects/cmake-build-debug
 
-build all: phony
+build all: phony CppProjects.exe
 
 # =============================================================================
 # Built-in targets

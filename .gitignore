@@ -1,2 +1,6 @@
-calc.exe
+test/calc.exe
 test.exe
+sudoku.exe
+
+cmake-build-debug
+.idea
